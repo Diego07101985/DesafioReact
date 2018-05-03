@@ -5,8 +5,8 @@
 Caminho padrão : http://127.0.0.1:3000/
 
 Foi desenvolvido uma SPA para filmes. O usuario pode interagir com:
- - Lista de filmes (Com paginacao)
- OBS:A paginacao precisa de ajax especifico para controlar estados
+ - Lista de filmes (Com paginação)
+ OBS:A paginação precisa de ajax especifico para controlar estados
  - adicionar filme (Redux Form)
  - Editar um filme
  - Remover um filme 
@@ -17,7 +17,7 @@ Foi desenvolvido uma SPA para filmes. O usuario pode interagir com:
  - Permitir o usuário ordenar a listagem por nome do filme ou número de likes(ordem decrescente) 
  - Area administrativa /admin
 
-Api suport Django Rest permiti inserir dados de atores e filmes
+Api suport Django Rest permite inserir dados de atores e filmes
  - Lista atores http://127.0.0.1:8000/actors/ 
  - Mostra os delalhes http://127.0.0.1:8000/actors/1/
  - Api root http://127.0.0.1:8000/ :
@@ -28,7 +28,7 @@ Api suport Django Rest permiti inserir dados de atores e filmes
   }
   - Buscar por slug http://127.0.0.1:8000/filmes/{slug}/
   - Buscar por slug http://127.0.0.1:8000/filmes/{id}/
-  - Busca por ordenacao http://127.0.0.1:8000/filmes/findAllOrderBy?type={tipoCampo}
+  - Busca por ordenação http://127.0.0.1:8000/filmes/findAllOrderBy?type={tipoCampo}
   - Incrementar curtidas por id http://127.0.0.1:8000/filmes/likeMovie/{id}
   - Incrementar curtidas por id http://127.0.0.1:8000/filmes/likeMovie/{slug}
 

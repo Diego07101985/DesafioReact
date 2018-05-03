@@ -10,7 +10,7 @@ Foi desenvolvido uma SPA para filmes. O usuario pode interagir com:
  - Adicionar filme (Redux Form)
  - Editar um filme
  - Remover um filme 
-
+- O SPA nao foi implementado completamente como foi informado necessario F5 para verificar a mudanca de estados o ajax nao esta funcionando 
 
  Tarefas que não foram implementadas neste endpoint:
  - Listar por filmes publicados  

@@ -14,7 +14,7 @@ Foi desenvolvido uma SPA para filmes. O usuario pode interagir com:
 
  Tarefas que não foram implementadas neste endpoint:
  - Listar por filmes publicados  
- - Permitir o usuário ordenar a listagem por nome do filme ou número de likes(ordem decrescente) 
+ - Permitir o usuario ordenar a listagem por nome do filme ou número de likes(ordem decrescente) 
  - Área administrativa /admin {Existe uma funcionalidade na api padrao django rest framework  http://127.0.0.1:8000/api-auth/login/?next=/filmes/admin/   
        usuario defaul :{
              user :disalles7

@@ -12,12 +12,12 @@ export default function moviesReducer(state = initialState.movies, action) {
             ];
         case types.EDIT_MOVIE:
             return [
-                ...state.filter(movie => movie.id !== action.ADD_MOVIE.id),
+                ...state.filter(movie => movie.results.id !== action.ADD_MOVIE.id),
                 Object.assign({}, action.movie)
             ];
         case types.DELETE_MOVIE:
             return [
-                ...state.filter(movie => movie.id !== action.id)
+                ...state.results.filter(movie => movie.id !== action.id)
             ];
         case types.PAGE_MOVIES:
             return action.payload;

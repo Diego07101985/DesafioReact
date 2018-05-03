@@ -17,17 +17,12 @@ class ViewMoviePage extends React.Component {
     }
     render() {
         return (
-
-            !this.props.ajaxLoading ?
-                <p className="text-center alert alert-info">Carregando Filme...</p>
+            !this.props.currentMovie ?
+                <p className="text-center alert alert-danger">Filme não encontrado.</p>
                 :
-                !this.props.currentMovie ?
-                    <p className="text-center alert alert-danger">Filme não encontrado.</p>
-                    :
-                    <div className="add-merchant">
-                        <MovieView movie={this.props.currentMovie} />
-                    </div>
-
+                <div className="add-merchant">
+                    <MovieView movie={this.props.currentMovie} />
+                </div>
         )
     }
 }
@@ -43,7 +38,7 @@ function mapStateToProps(state, ownProps) {
     let currentMovie = state.movies.count ? findCurrentMovie(state.movies, ownProps.match.params.pageNo) : null;
     return {
         currentMovie,
-        merchantForm: state.form.merchant,
+        movieForm: state.form.movie,
         ajaxLoading: state.ajaxLoading,
         goBack: ownProps.history.goBack
     };

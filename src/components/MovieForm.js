@@ -30,7 +30,7 @@ let MovieForm = ({ onSubmit, submitting, formStatus }) => {
                 {formStatus === 'success' &&
                     <p className="alert alert-success">
                         Filme foi salvo com sucesso
-                    <NavLink to="/filmes/1"> Retorna para a lista de filmes</NavLink>
+                    <NavLink to="/filmes/"> Retorna para a lista de filmes</NavLink>
                     </p>}
                 {formStatus === 'error' &&
                     <p className="alert alert-danger">Não foi possivel salvar o filme. Por favor verifique os campos.</p>}

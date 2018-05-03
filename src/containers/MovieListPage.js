@@ -7,7 +7,7 @@ import { deleteMovie, pageMovies, getMovies } from '../actions/movieActions';
 import MovieList from '../components/MovieList';
 
 
-class MoviesPage extends React.Component {
+class MovieListPage extends React.Component {
 
 
     componentWillMount() {
@@ -73,4 +73,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MoviesPage);
+export default connect(mapStateToProps, mapDispatchToProps)(MovieListPage);

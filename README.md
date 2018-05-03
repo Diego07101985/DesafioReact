@@ -1,45 +1,70 @@
-# Front-end Test Task
+# Desafio tarefa
 ## Task
 
-Develop SPA which should manage merchants. A user can interact with:
- - list of merchants (better with pagination)
- - adding merchant (redux-form is allowed but not required)
- - merchant editing
- - merchant removing
- - sorted history of bids for each merchant
 
-Front-end part should be developed as SPA with ES6, React and Redux.
-You can also use TypeScript to develop this task, but it is not required
-Back-end API should be mocked.
+Caminho padrão : http://127.0.0.1:3000/
 
+Foi desenvolvido uma SPA para filmes. O usuario pode interagir com:
+ - Lista de filmes (Com paginacao)
+ OBS:A paginacao precisa de ajax especifico para controlar estados
+ - adicionar filme (Redux Form)
+ - Editar um filme
+ - Remover um filme 
+
+
+ Tarefas que nao foram implementadas neste endpoint:
+ - Listar por filmes publicados  
+ - Permitir o usuário ordenar a listagem por nome do filme ou número de likes(ordem decrescente) 
+ - Area administrativa /admin
+
+Api suport Django Rest permiti inserir dados de atores e filmes
+ - Lista atores http://127.0.0.1:8000/actors/ 
+ - Mostra os delalhes http://127.0.0.1:8000/actors/1/
+ - Api root http://127.0.0.1:8000/ :
+  {
+      "users": "http://127.0.0.1:8000/users/",
+      "filmes": "http://127.0.0.1:8000/filmes/",
+      "actors": "http://127.0.0.1:8000/actors/"
+  }
+  - Buscar por slug http://127.0.0.1:8000/filmes/{slug}/
+  - Buscar por slug http://127.0.0.1:8000/filmes/{id}/
+  - Busca por ordenacao http://127.0.0.1:8000/filmes/findAllOrderBy?type={tipoCampo}
+  - Incrementar curtidas por id http://127.0.0.1:8000/filmes/likeMovie/{id}
+  - Incrementar curtidas por id http://127.0.0.1:8000/filmes/likeMovie/{slug}
+
+
+O Front  foi desenvolvido com SPA ES6, React e Redux
 ## Data structure example
-Bid 
+Actor 
 
 ```
 {
-  id: string,
-  carTitle: string,
-  amount: number,
-  created: string
+  id: number,
+  name : string,
+  age: number,
+  filme: string
 }
 ```
 
-Merchant
-
+Movie
 ```
 {
-  id: string,
-  firstname: string,
-  lastname: string,
-  avatarUrl: string,
-  email: string,
-  phone: string,
-  hasPremium: boolean,
-  bids: Array<Bid>
+    url: string,
+    id: number,
+    title": string,
+    original_title: string,
+    slug: string,
+    synopsis: string,
+    duration_in_seconds: number,
+    image: string,
+    likes: number,
+    published: boolean,
+    owner: string,
+    actors: Array<Actor>
 }
 ```
 
-## Run Project
-run `npm install`
+## Iniciar Projeto
+rodar `npm install`
 
-then `npm start`
+depois `npm start`

@@ -1,6 +1,6 @@
-export const ADD_MERCHANT = 'ADD_MERCHANT';
-export const EDIT_MERCHANT = 'EDIT_MERCHANT';
-export const DELETE_MERCHANT = 'DELETE_MERCHANT';
-export const SET_MERCHANTS = 'SET_MERCHANTS';
+export const ADD_MOVIE = 'ADD_MOVIE';
+export const EDIT_MOVIE = 'EDIT_MOVIE';
+export const DELETE_MOVIE = 'DELETE_MOVIE';
+export const SET_MOVIES = 'SET_MOVIES';
 export const AJAX_LOADING = 'AJAX_LOADING';
-export const PAGE_MERCHANTS = 'PAGE_MERCHANTS';
+export const PAGE_MOVIES = 'PAGE_MOVIES';

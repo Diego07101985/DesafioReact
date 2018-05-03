@@ -1,4 +1,4 @@
 export default {
-    merchants: [],
+    movies: [],
     ajaxLoading: false
 }

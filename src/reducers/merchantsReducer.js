@@ -1,25 +1,25 @@
 import * as types from '../actions/actionTypes';
 import initialState from '../store/initialState';
 
-export default function merchantsReducer(state = initialState.merchants, action) {
+export default function moviesReducer(state = initialState.movies, action) {
     switch (action.type) {
-        case types.SET_MERCHANTS:
-            return action.merchants;
-        case types.ADD_MERCHANT:
+        case types.SET_MOVIES:
+            return action.movies;
+        case types.ADD_MOVIE:
             return [
                 ...state,
-                Object.assign({}, action.merchant)
+                Object.assign({}, action.movie)
             ];
-        case types.EDIT_MERCHANT:
+        case types.EDIT_MOVIE:
             return [
-                ...state.filter(merchant => merchant.id !== action.merchant.id),
-                Object.assign({}, action.merchant)
+                ...state.filter(movie => movie.id !== action.ADD_MOVIE.id),
+                Object.assign({}, action.movie)
             ];
-        case types.DELETE_MERCHANT:
+        case types.DELETE_MOVIE:
             return [
-                ...state.filter(merchant => merchant.id !== action.id)
+                ...state.filter(movie => movie.id !== action.id)
             ];
-        case types.PAGE_MERCHANTS:
+        case types.PAGE_MOVIES:
             return action.payload;
         default:
             return state;

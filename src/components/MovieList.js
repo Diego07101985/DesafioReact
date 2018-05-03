@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 // Child components
 import Pagination from './Pagination';
 
-const MerchantList = ({ movies, onDeleteMovie, pages, currentPage }) => {
+const MovieList = ({ movies, onDeleteMovie, paginateMovie, pages, currentPage }) => {
     debugger;
     return (
         !movies.length ?
@@ -58,10 +58,10 @@ const MerchantList = ({ movies, onDeleteMovie, pages, currentPage }) => {
                     </table>
                 </div>
                 { /* show pagination if there are more than 1 page */
-                    pages > 1 && <Pagination pages={pages} currentPage={currentPage} />
+                    pages > 1 && <Pagination pages={pages} paginateMovie={paginateMovie} currentPage={currentPage} />
                 }
             </div>
     )
 };
 
-export default MerchantList;
+export default MovieList;

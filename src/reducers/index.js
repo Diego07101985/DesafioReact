@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
 // Reducers
-import merchants from './merchantsReducer';
+import movies from './merchantsReducer';
 import ajaxLoading from './ajaxLoadingReducer';
 
 const rootReducer = combineReducers({
-    merchants,
+    movies,
     ajaxLoading,
     form: formReducer
 });

@@ -12,6 +12,9 @@ Foi desenvolvido uma SPA para filmes. O usuario pode interagir com:
  - Remover um filme 
 - O SPA nao foi implementado completamente como foi informado necessario F5 para verificar a mudanca de estados o ajax nao esta funcionando 
 
+
+Visualizar um filme especifico http://127.0.0.1:3000/filmes/filme/{id}  exemplo 22
+
  Tarefas que não foram implementadas neste endpoint:
  - Listar por filmes publicados  
  - Permitir o usuario ordenar a listagem por nome do filme ou número de likes(ordem decrescente) 
